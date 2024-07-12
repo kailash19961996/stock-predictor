@@ -38,7 +38,7 @@ if stock:
         return all_articles
 
     articles = fetch_news(stock, start_date, end_date)
-    st.subheader(f"The top 5 atricles are :")
+    st.subheader(f"Total articles found: {len(articles)}. \nListing the first 5 articles :")
     i = 0
     for article in articles['articles']:
         st.write(f"**{article['title']}**")
