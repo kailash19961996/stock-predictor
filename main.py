@@ -15,6 +15,7 @@ stock = st.text_input("Enter the stock ticker (e.g., AAPL, GOOG):")
 
 # User input for date range
 start_date = st.date_input("Start date", datetime(2018, 1, 1))
+st.write(f"Search for only 1 month in past, as the NEWS_API is limited for 1 month to free users")
 end_date = st.date_input("End date", datetime.now())
 
 # Fetch and display stock data
